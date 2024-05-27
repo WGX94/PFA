@@ -1,0 +1,71 @@
+#homeContainer {
+    background: white;
+    height: 2000px;
+
+    #top {
+        height: 100vh;
+        background: #252526;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 350px;
+
+            #text {
+                display: flex;
+                flex-direction: column;
+
+                #firstLine {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 35px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+
+                }
+
+                #secondLine {
+                    color: #FFF;
+                    font-family: Roboto;
+                    font-size: 35px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                }
+
+            }
+        }
+    }
+
+    #woman {
+        position: absolute;
+        left: 0;
+        height: 87%;
+
+    }
+
+    #man {
+        position: absolute;
+        right: 0;
+        height: 87%;
+    }
+
+    #bottom {
+        height: 47px;
+        background: #BDAF87;
+        width: 100%;
+
+    }
+
+}

@@ -1,0 +1,136 @@
+#simuContainer {
+    height: 100%;
+    background: #252526;
+    display: flex;
+    flex-direction: column;
+
+    #progressBar {
+        padding-top: 104px;
+        height: 80px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        #blockBar {
+            width: 730px;
+            display: flex;
+            justify-content: space-between;
+
+            .step {
+                height: 5px;
+                
+                border-radius: 10px;
+                width: 100px;
+            }
+
+        }
+        
+
+        
+
+    }
+
+    #form {
+        padding: 10px 0px ;
+        height: 100%;
+        background: green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .divExpended {
+            border: 1px solid #BEAF87;
+            border-radius: 10px;
+            height: 500px;
+            background-color: red;
+            width: 95%;
+            display: flex;
+
+            .leftDiv {
+                background: yellow;
+                width: 50%;
+                height: 100%;
+
+            }
+
+            .rightDiv {
+                width: 50%;
+                background: blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #positionImg {
+                    display: flex;
+                    justify-content: flex-end;
+
+                }
+
+                .img {
+                    width: 400px;
+                    height: 400px;
+                    background: purple;
+                    border: 1px solid #BEAF87;   
+
+                    .photo {
+                        height: 100%;
+                        
+                    }
+                }
+
+            }
+
+        }
+
+        .div {
+            border: 1px solid #BEAF87;
+            border-radius: 10px;
+            height: 100px;
+            background-color: red;
+            width: 95%;
+            display: flex;
+
+            .leftDiv {
+                background: yellow;
+                width: 50%;
+                height: 100%;
+
+                #map {
+                    visibility: hidden;
+                    
+                }
+                
+                
+
+                
+
+            }
+
+            .rightDiv {
+                width: 50%;
+                background: blue;
+
+                .img {
+                    width: 40px;
+                    height: 40px;
+                    background: purple;
+                    border: 1px solid #BEAF87;
+
+                    .photo {
+                        visibility: hidden;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
+
+#map path:hover {
+    fill: white;
+    cursor: pointer;
+}
