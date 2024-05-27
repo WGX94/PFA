@@ -26,7 +26,7 @@ function AppRoutes() {
       element: <Register />,
     },
     {
-      path: "/Dashboard",
+      path: "/dashboard",
       element: <Dashboard />,
     },
     {

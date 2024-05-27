@@ -8,7 +8,7 @@ import man from "../../../public/man.png"
 
 const Write = () => {
 
-    const [popup, setPopup] = useState('false')
+    const [popup, setPopup] = useState(false)
 
     const [step1, setStep1] = useState('white')
     const [step2, setStep2] = useState('white')
@@ -247,7 +247,8 @@ const Write = () => {
                 }
                 {
                     popup ?
-                    <div>
+                    <div id="popupContainer"> 
+                        <span>Résultats</span>
 
                     </div> : null
                 }

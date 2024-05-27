@@ -26,7 +26,7 @@ const Register = () => {
 
     return (
         <div id='registerContainer'>
-            {userLoggedIn && (<Navigate to={'/Dashboard'} replace={true} />)}
+            {userLoggedIn && (<Navigate to={'/write'} replace={true} />)}
 
             
                 <div id='content'>

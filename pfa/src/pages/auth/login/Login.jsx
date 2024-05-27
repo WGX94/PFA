@@ -33,7 +33,7 @@ const Login = () => {
 
     return (
         <div id="loginContainer">
-            {userLoggedIn && (<Navigate to={'/Dashboard'} replace={true} />)}
+            {userLoggedIn && (<Navigate to={'/write'} replace={true} />)}
             
                 <div id="content">
                     <div id="title">

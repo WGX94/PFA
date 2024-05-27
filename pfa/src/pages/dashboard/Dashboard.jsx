@@ -1,11 +1,36 @@
 import "./dashboard.scss"
 import { useAuth } from "../../components/contexts/authContext"
-
+import SideNavBar from "../../components/sideNavBar/SideNavBar"
 
 const Dashboard = () => {
-    const { currentUser } = useAuth()
+    
     return (
-        <div className='text-2xl font-bold pt-14'>Hello {currentUser.displayName ? currentUser.displayName : currentUser.email}, you are now logged in.</div>
+        <div id="dashboardContainer">
+            <div id="content">
+                <SideNavBar />
+                <div id="contentRight">
+                    <div id="left">
+                        <div id="nav">
+                            <div className="block">Nouvelle simulation</div>
+                            <div className="block">Brochure</div>
+                            <div className="block">Ajouter une agence</div>
+                        </div>
+                        <div id="top">
+
+                        </div>
+                        <div id="bottom">
+                            
+                        </div>
+                    </div>
+                    <div id="right">
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
     )
 }
 

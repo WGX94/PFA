@@ -18,6 +18,14 @@ const Header = () => {
             <div id='bottomHeader'>
                 <img src={logo} alt="" />
                 <div id='nav'>
+                {
+                        userLoggedIn
+                            ?
+                            <button className='buttons' id='lastButton' onClick={() => {navigate('/Dashboard')}}>Dashboard</button>
+                            : null
+                            
+                }
+                    <div id='hiddenBlock'></div>
                     <button className='buttons'id='firstButton'>Voir nos biens de luxe
 
                     </button >

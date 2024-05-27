@@ -1,4 +1,78 @@
 #dashboardContainer {
     height: 100vh;
-    background-color: red;
+    background: #BEAF87;
+
+    #content {
+        padding: 117px 15px 15px 15px;
+        height: 83%;
+        display: flex;
+
+        #contentRight {
+            background: green;
+            height: 100%;
+            width: 95%;
+            padding-left: 15px;
+            display: flex;
+
+            gap: 15px;
+
+
+            #left {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                background: yellow;
+                width: 63%;
+                gap: 15px;
+
+                #nav {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 50px;
+                    
+                    background: blue;
+
+                    .block {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50px;
+                        width: 200px;
+
+                        text-align: center;
+                        font-family: Barlow;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 21px;
+                        /* 131.25% */
+                    }
+                }
+
+                #top {
+                    height: 52%;
+                    background: pink;
+                }
+
+                #bottom {
+                    height: 48%;
+                    background: purple;
+                }
+
+
+            }
+
+            #right {
+                height: 100%;
+                background: red;
+                width: 37%;
+
+            }
+
+
+
+        }
+
+
+    }
 }
