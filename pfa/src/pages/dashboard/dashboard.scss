@@ -28,15 +28,29 @@
                 #nav {
                     display: flex;
                     justify-content: space-between;
-                    height: 50px;
-                    
+                    height: 40px;
+
                     background: blue;
+
+                    #firstBlock {
+                        border-radius: 4px;
+                        outline: 2px solid #FFF;
+                        color: #FFF;
+                        background: #252526;
+                        position: relative;
+
+                        #more {
+                            top: -10px;
+                            right: -10px;
+                            position: absolute;
+                        }
+                    }
 
                     .block {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: 50px;
+                        height: 40px;
                         width: 200px;
 
                         text-align: center;
@@ -45,18 +59,98 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: 21px;
+                        border-radius: 4px;
+                        background: #E5E5E5;
                         /* 131.25% */
                     }
                 }
 
                 #top {
                     height: 52%;
-                    background: pink;
+                    border-radius: 5px;
+background: #252526;
+box-shadow: 0px 4px 18.4px 0px rgba(0, 0, 0, 0.25);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    #title {
+                        padding: 8px 10px;
+                        text-align: start;
+                        width: 650px;
+                        color: #FFF;
+
+                        font-family: Barlow;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 21px;
+                        /* 87.5% */
+                    }
+
+
+
+                    #table {
+                        width: 650px;
+                        border-collapse: collapse;
+
+                        th {
+                            color: #FFF;
+                            font-family: Barlow;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 21px;
+                            /* 131.25% */
+                        }
+
+                        td {
+                            border-bottom: 1px solid white;
+                            padding: 8px;
+                            text-align: left;
+                            color: #FFF;
+                            font-family: Barlow;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 21px;
+                            /* 131.25% */
+                        }
+
+                        .actions {
+                            width: 82px;
+
+                            .button1 {
+                                background: none;
+                                border: 0;
+                                cursor: pointer;
+                                border-radius: 10px;
+
+                            }
+                            
+                        }
+
+
+
+
+                    }
                 }
 
                 #bottom {
                     height: 48%;
                     background: purple;
+                    display: flex;
+                    flex-direction: column;
+
+                    #titleGraph {
+                        height: 2%;
+                    }
+
+
+                    #graph {
+                        height: 100%;
+
+                    }
                 }
 
 
