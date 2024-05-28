@@ -65,8 +65,8 @@ const Dashboard = () => {
     };
 
     const getClientStatus = (client) => {
-        const hasPersonalInfo = client.address && client.name && client.email && client.phone && client.businessName;
-        return hasPersonalInfo ? 'Refus' : 'Intéressé';
+        const hasPersonalInfo = client.Adress && client.Name && client.Mail && client.Tel && client.BusinessName;
+        return hasPersonalInfo ? 'Intéressé' : 'Refus';
     };
 
 
@@ -116,7 +116,7 @@ const Dashboard = () => {
 
                         </div>
                         <div id="bottom">
-                            <span id="titleGraph">Intérêts(en €)</span>
+                            <span id="titleGraph">Intérêts (en €)</span>
                             <div id="graph">
                                 <MyResponsiveLine />
 
@@ -126,6 +126,19 @@ const Dashboard = () => {
                         </div>
                     </div>
                     <div id="right">
+                        <div id="titleRight">Listes des clients</div>
+                        <div id="list">
+                            {clientsArray.map(client => (
+                            <ul key={client.clientId} id="ul">
+                                <li className="itemClient">
+                                    <span className="leftClient">{client.Name || 'N/D'}</span>
+                                    <span className="rightClient">{client.BusinessName}</span>
+                                </li>
+                            </ul>
+
+                            ))}
+                            
+                        </div>
 
                     </div>
 

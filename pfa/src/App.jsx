@@ -7,7 +7,7 @@ import Write from "./pages/simulation/Write";
 import Read from './components/Read';
 import Login from './pages/auth/login/Login';
 import Register from './pages/auth/register/Register';
-import UpdateWrite from "./components/UpdateWrite";
+import UpdateWrite from "./pages/updateInfo/UpdateWrite";
 import UpdateRead from "./components/UpdateRead";
 import { AuthProvider } from "./components/contexts/authContext";
 
