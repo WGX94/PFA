@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import ArrowIcon from '@mui/icons-material/ArrowCircleRight'
+import { useState } from "react";
 import "./write.scss"
 import { app } from "../../firebaseConfig";
 import { getDatabase, ref, set, push } from "firebase/database"
@@ -14,8 +18,8 @@ import graph from "../../../public/assets/graph.svg"
 import devices from "../../../public/assets/devices.svg"
 import school from "../../../public/assets/school.svg"
 import campaign from "../../../public/assets/campaign.svg"
-
-
+import IconLabelButtons from "../../components/Buttons";
+import graphIcon from "../../../public/graph.png"
 
 
 
@@ -182,7 +186,7 @@ const Write = () => {
                     </div>
                     <div className="rightDiv">
                         <div className="img" id="positionImg">
-                            <img src={man} alt="" className="photo" />
+                            <img src={man} alt="" className="photo" id='imgL' />
                         </div>
                     </div>
                 </div>
@@ -196,8 +200,8 @@ const Write = () => {
                                 <button onClick={handleClick2} className="buttons">Suivant</button>
                             </div>
                             <div className="rightDiv">
-                                <div className="img" id="positionImg">
-                                    <img src={employeesImg} alt="" className="photo" />
+                                <div className="img" id="positionImg2">
+                                    <img src={employeesImg} alt="" className="photo" id='imgE'/>
                                 </div>
                             </div>
                         </div> : null
@@ -211,8 +215,8 @@ const Write = () => {
                                 <button onClick={handleClick3} className="buttons">Suivant</button>
                             </div>
                             <div className="rightDiv">
-                                <div className="img" id="positionImg">
-                                    <img src={caImg} alt="" className="photo" />
+                                <div className="img" id="positionImg3">
+                                    <img src={caImg} alt="" className="photo" id='imgC' />
                                 </div>
                             </div>
                         </div> : null
@@ -228,8 +232,8 @@ const Write = () => {
 
                             </div>
                             <div className="rightDiv">
-                                <div className="img" id="positionImg">
-                                    <img src={marketImg} alt="" className="photo" />
+                                <div className="img" id="positionImg4">
+                                    <img src={marketImg} alt="" className="photo" id='imgM' />
                                 </div>
                             </div>
                         </div> : null
@@ -244,8 +248,8 @@ const Write = () => {
                                 <button onClick={handleClick5} className="buttons">Suivant</button>
                             </div>
                             <div className="rightDiv">
-                                <div className="img" id="positionImg">
-                                    <img src={toolsImg} alt="" className="photo" />
+                                <div className="img" id="positionImg5">
+                                    <img src={toolsImg} alt="" className="photo" id='imgT' />
                                 </div>
                             </div>
 
@@ -263,8 +267,8 @@ const Write = () => {
                                 <button onClick={handleClick6} className="buttons">AFFICHER RESULTATS</button>
                             </div>
                             <div className="rightDiv">
-                                <div className="img" id="positionImg">
-                                    <img src={offersImg} alt="" className="photo" />
+                                <div className="img" id="positionImg6">
+                                    <img src={offersImg} alt="" className="photo" id='imgN' />
                                 </div>
                             </div>
                         </div> : null
@@ -273,59 +277,100 @@ const Write = () => {
                     popup ?
                         <div id="popupContainer">
                             <div id="leftPopup">
-                                <div>
-                                    <button onClick={saveData} className="buttons">Enregister la simulation</button>
-
+                                <div id='topLeftPopup'>
+                                    <span id='top'>Grâce à votre affiliation chez <span style={{color: '#BEAF87'}}>Century 21</span> vous pouvez bénéficier d’une augmentation de CA de<span style={{color: '#BEAF87'}}> + 150%*</span> !</span>
+                                    <div id='graph'>
+                                        <img src={graphIcon} alt="" />
+                                    </div>
+                                    <span id='bottom'>Grâce à nos outils numériques et les publicités <span style={{color: '#BEAF87'}}>Century 21</span>, gagnez en visibilité et en productivité tout en économisant des revenus pour votre entreprise !</span>
                                 </div>
+                                
+                                <Stack direction="row" spacing={10}>
+                                    <Button variant="contained" style={{ background: "#BEAF87", cursor: "pointer" }} endIcon={<ArrowIcon />}>
+                                        Contacter un développeur
+                                    </Button>
+                                    <Button variant="contained" onClick={saveData} style={{ background: "#BEAF87", cursor: "pointer" }} endIcon={<ArrowIcon />}>
+                                        Enregister votre simulation
+                                    </Button>
+                                </Stack>
+                                <span id='bottomText'>*Chiffre indicatif qui fait référence à la moyenne dans ce secteur à la troisième année</span>
 
                             </div>
                             <div id="rightPopup">
+                                <div id="top">
+                                    <div className="firstP">
+                                        <img className="img" src={graph} alt="" />
+                                        <span className="text">Selon les Franchises Century 21 dans votre secteur et avec des caractéristiques similaire, vous pouvez espérer une hausse de CA de 150% à la troisième année et multiplier par x1,5 vos ventes de biens.</span>
+                                    </div>
+                                    <div className="firstP">
+                                        <img className="img" src={devices} alt="" />
+                                        <span className="text">Bénéficiez des logiciels Naxos filiale de Century 21 et gagnez en productivité et simplicité !</span>
+                                    </div>
+                                    <div className="firstP">
+                                        <img className="img" src={school} alt="" />
+                                        <span className="text">Formez-vous et vos employés grâce aux formations Century 21 pour acquérir des compétences professionnels. </span>
+                                    </div>
+                                    <div className="firstP">
+                                        <img className="img" src={campaign} alt="" />
+                                        <span className="text">Accès aux publicités Century 21 et bénéficiez d’un visibilité premium. Cela comprend des flyers, un bon référencement internet, un site dédié...</span>
+                                    </div>
+                                    <div id="buttons">
+                                        <IconLabelButtons />
 
-                                <div className="firstP">
-                                    <img src={graph} alt="" />
-                                    <span>Selon les Franchises Century 21 dans votre secteur et avec des caractéristiques similaire, vous pouvez espérer une hausse de CA de 150% à la troisième année et multiplier par x1,5 vos ventes de biens.</span>
+                                    </div>
+
                                 </div>
+                                <div id="bottom">
+                                    <div id="form">
+                                        <span id="head">Enregistrer un client</span>
+
+                                        <input type='text' className="input" placeholder="Addresse" value={inputAdress} onChange={(e) => setInputAdress(e.target.value)} />
+
+
+
+                                        <input type='text' className="input" placeholder="Nom prénom" value={inputName} onChange={(e) => setInputName(e.target.value)} />
+
+
+
+
+                                        <input type='text' className="input" placeholder="Nom de l'agence immobilière" value={inputBusinessName} onChange={(e) => setInputBusinessName(e.target.value)} />
+
+
+
+
+                                        <input type='tel' className="input" placeholder="Numéro de téléphone" value={inputTel} onChange={(e) => setInputTel(e.target.value)} />
+
+
+
+                                        <input type='email' className="input" placeholder="Email" value={inputMail} onChange={(e) => setInputMail(e.target.value)} />
+
+                                    </div>
+                                    <button onClick={saveData} className="buttons">Confirmer</button>
+
+
+                                </div>
+
 
 
                             </div>
 
 
 
-                        </div> : null
+
+                        </div>
+
+
+
+                        : null
                 }
             </div>
 
-        </div>
+        </div >
     )
 }
 
 export default Write
 
 /*
-<span>Résultats</span>
-                            <div className="persInfo">
-                                <span>Adresse</span>
-                                <input type='text' value={inputAdress} onChange={(e) => setInputAdress(e.target.value)} />
 
-                            </div>
-                            <div className="persInfo">
-                                <span>Nom</span>
-                                <input type='text' value={inputName} onChange={(e) => setInputName(e.target.value)} />
-
-                            </div>
-                            <div className="persInfo">
-                                <span>Nom de l'entreprise</span>
-                                <input type='text' value={inputBusinessName} onChange={(e) => setInputBusinessName(e.target.value)} />
-
-                            </div>
-                            <div className="persInfo">
-                                <span>Tel</span>
-                                <input type='tel' value={inputTel} onChange={(e) => setInputTel(e.target.value)} />
-
-                            </div>
-                            <div className="persInfo">
-                                <span>Mail</span>
-                                <input type='email' value={inputMail} onChange={(e) => setInputMail(e.target.value)} />
-
-                            </div>
 */

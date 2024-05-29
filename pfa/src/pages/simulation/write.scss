@@ -126,13 +126,40 @@
                 .img {
                     width: 400px;
                     height: 400px;
-                    background: purple;
+                    
                     border: 1px solid #BEAF87;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     .photo {
                         height: 100%;
 
+        
+
                     }
+
+                    #imgE {
+                        width: 100%;
+                        height: fit-content;
+                        
+
+                    }
+
+                    #imgM {
+                        width: 100%;
+                        height: fit-content;
+
+                    }
+
+                    #imgT {
+                        width: 100%;
+                        height: fit-content;
+                    }
+
+                    
+
+
                 }
 
             }
@@ -220,11 +247,39 @@
                 justify-content: center;
                 align-items: center;
 
+                #positionImg {
+                    background: red;
+
+                    }
+
+                    #positionImg2 {
+
+                    }
+
+                    #positionImg3 {
+
+                    }
+
+                    #positionImg4 {
+
+                    }
+
+                    #positionImg5 {
+                        background: url("../../../public/assets/campaign.svg");
+
+                    }
+
+                    #positionImg6 {
+                        
+                    }
+
                 .img {
                     width: 40px;
                     height: 40px;
-                    background: purple;
+                    
                     border: 1px solid #BEAF87;
+
+                    
 
                     .photo {
                         visibility: hidden;
@@ -247,24 +302,180 @@
             justify-content: space-around;
 
             #leftPopup {
-                width: 52%;
-                background: red;
+                width: 50%;
+                padding: 0% 2%;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                #topLeftPopup {
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    #top {
+                        color: #FFF;
+                        font-family: Barlow;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 41px;
+                        /* 128.125% */
+                    }
+
+                    #graph {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+
+                    #bottom {
+                        color: #FFF;
+                        font-family: Barlow;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 35px;
+                        /* 175% */
+                    }
+                }
+
+                #bottomText {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Barlow;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 21px;
+                    padding-bottom: 10px;
+                    /* 175% */
+                }
 
             }
 
             #rightPopup {
-                width: 42%;
-                background: yellow;
-                padding: 10px 10px;
+                width: 40%;
+                border-radius: 8px;
+                background: #FFF;
+                padding: 10px 2%;
+                overflow: scroll;
 
-
-
-                .firstP {
-                    background: blue;
+                #top {
+                    height: 500px;
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid black;
 
+                    .firstP {
+
+                        display: flex;
+                        justify-content: space-around;
+
+                        .img {
+                            width: 8%;
+                        }
+
+                        .text {
+                            width: 82%;
+                            color: #000;
+                            font-family: Barlow;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 30px;
+                            /* 150% */
+                        }
+
+                    }
+
+                    #buttons {
+                        height: 40px;
+
+
+                    }
                 }
+
+                #bottom {
+                    padding: 0 10px;
+                    height: 500px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    #head {
+                        color: #000;
+                        font-family: Barlow;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        /* 200% */
+                    }
+
+                    #form {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        background: none;
+                        width: 100%;
+                        padding: 0;
+                        height: 300px;
+
+
+                        .input {
+                            padding-left: 2%;
+                            width: 94%;
+                            height: 32px;
+                            border-radius: 8px;
+                            background: #C2C2C2;
+                            border: 0;
+                            color: #F0F0F0;
+                            font-family: Barlow;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 40px;
+                            /* 200% */
+                        }
+
+
+                    }
+
+                    .buttons {
+                        width: max-content;
+                        border: 0;
+                        border-radius: 8px;
+                        background: #3E3E52;
+                        color: #FFF;
+                        font-family: Barlow;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        padding: 0 15px;
+                        cursor: pointer;
+                        /* 200% */
+                    }
+
+                    ::placeholder {
+                        color: #F0F0F0;
+                    }
+                }
+
+
+
+
+
+
 
 
             }
