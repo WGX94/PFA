@@ -2,7 +2,8 @@ import "./home.scss"
 import woman from "../../../public/woman.png"
 import man from "../../../public/man.png"
 import downArrow from"../../../public/assets/arrowIcon.svg"
-
+import numberCammenber from"../../../public/assets/numberCammenber.svg"
+import keyNumber from"../../../public/assets/keyNumber2.png"
 
 const Home = () => {
     return (
@@ -31,9 +32,22 @@ const Home = () => {
                 </div>
 
             </div>
-            <div id='middleBlockNoir'></div>
+            <div id='middleBlockNoir'>
+                <img src={numberCammenber} id='numberC'></img>
+                <div id="text">
+                    <span id="firstLine">L’augmentation de CA en moyenne</span>
+                    <span id="secondLine">De visibilité  </span>
+                    <span id="thirdLine">De temps gagné avec nos solutions numériques adaptées</span>
+                    <span id="forthLine">Agences sont déjà franchisées</span>
+                </div>
+            </div>
             <div id='middleBlockJaune'></div>
-            <div id='middleBlockNoir2'></div>
+            <div id='middleBlockNoir2'>
+                <span id="Mais">Mais aussi... beaucoup d’autres avantages</span>
+            </div>
+            <div id='lastBlock'>
+                <img src={keyNumber} id='keyNumber'></img>
+            </div>
 
         </div>
     )

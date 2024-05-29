@@ -51,11 +51,11 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
-                gap: 43%;
+                gap: 30%;
                 #bSimulation{
                     height: 15%;
                     width: 36%;
-                    padding: 18px 57px 23px 58px;
+                    padding: 26px 50px;
                     justify-content: center;
                     align-items: center;
                     flex-shrink: 0;
@@ -114,6 +114,41 @@
     #middleBlockNoir{
         background-color: black;
         height: 17.5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 6%;
+        #numberC{
+            justify-content: center;
+            width: 80%;
+        }
+        #text{
+            color: #BEAF87;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 27px;
+            display: flex;
+            justify-content: space-between;
+            
+            #firstLine{
+                width: 22%;
+            }
+            #secondLine{
+                width: 18%;
+            }
+            #thirdLine{
+                width: 18%;
+            }
+            #forthLine{
+                width: 18%;
+            }
+        }
+
+
     }
     #middleBlockJaune{
         background-color: #BDAF87;
@@ -122,6 +157,30 @@
     #middleBlockNoir2{
         background-color: black;
         height: 2.5%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 5%;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 27px; /* 75% */
+        
+
     }
+    #lastBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4%;
+        #keyNumber{
+            width: 90%;
+
+        }
+    }
+    
 
 }
