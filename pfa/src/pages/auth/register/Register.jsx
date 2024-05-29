@@ -91,7 +91,7 @@ const Register = () => {
                             disabled={isRegistering}
                             className={`w-full px-4 py-2 text-white font-medium rounded-lg ${isRegistering ? 'bg-gray-300 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700 hover:shadow-xl transition duration-300'}`}
                         >
-                            {isRegistering ? 'Signing Up...' : 'Sign Up'}
+                            {isRegistering ? 'Création en cours...' : 'Créer un compte'}
                         </button>
                         <div className="text-sm text-center">
                             Vous avez déjà un compte ? {'   '}
