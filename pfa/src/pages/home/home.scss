@@ -18,6 +18,7 @@
             align-items: center;
             width: 100%;
             height: 350px;
+            gap: 100px;
 
             #text {
                 display: flex;
@@ -45,6 +46,49 @@
                 }
 
             }
+            #bContent{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 43%;
+                #bSimulation{
+                    height: 15%;
+                    width: 36%;
+                    padding: 18px 57px 23px 58px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-shrink: 0;
+                    display: inline-flex;
+                    border-radius: 9px;
+                    background: #F7F7F7;
+                    
+                    color: #252526;
+                    text-align: center;
+                    font-family: Barlow;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 21px;
+                }
+                #bDecouvrez{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #252526;;
+                    border: none;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    
+                }
+            }
+            
         }
     }
 
@@ -66,6 +110,18 @@
         background: #BDAF87;
         width: 100%;
 
+    }
+    #middleBlockNoir{
+        background-color: black;
+        height: 17.5%;
+    }
+    #middleBlockJaune{
+        background-color: #BDAF87;
+        height: 1.5%;
+    }
+    #middleBlockNoir2{
+        background-color: black;
+        height: 2.5%;
     }
 
 }

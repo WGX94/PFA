@@ -1,6 +1,7 @@
 import "./home.scss"
 import woman from "../../../public/woman.png"
 import man from "../../../public/man.png"
+import downArrow from"../../../public/assets/arrowIcon.svg"
 
 
 const Home = () => {
@@ -13,10 +14,12 @@ const Home = () => {
                         <span id="firstLine">Estimer facilement </span>
                         <span id="secondLine">votre gain lors de votre affiliation</span>
                     </div>
-                    <button>Démarrer une simulation</button>
-                    <button>Découvrez en plus
-                        <img src="" alt="" />
-                    </button>
+                    <div id='bContent'>
+                        <button id="bSimulation">Démarrer une simulation</button>
+                        <button id="bDecouvrez">Découvrez en plus
+                            <img src={downArrow} alt="" />
+                        </button>
+                    </div>
                     
 
                 </div>
@@ -28,6 +31,9 @@ const Home = () => {
                 </div>
 
             </div>
+            <div id='middleBlockNoir'></div>
+            <div id='middleBlockJaune'></div>
+            <div id='middleBlockNoir2'></div>
 
         </div>
     )
