@@ -4,6 +4,7 @@ import man from "../../../public/man.png"
 import downArrow from"../../../public/assets/arrowIcon.svg"
 import numberCammenber from"../../../public/assets/numberCammenber.svg"
 import keyNumber from"../../../public/assets/keyNumber2.png"
+import { Link } from "react-router-dom"
 
 const Home = () => {
     return (
@@ -16,13 +17,12 @@ const Home = () => {
                         <span id="secondLine">votre gain lors de votre affiliation</span>
                     </div>
                     <div id='bContent'>
+                        
                         <button id="bSimulation">Démarrer une simulation</button>
                         <button id="bDecouvrez">Découvrez en plus
                             <img src={downArrow} alt="" />
                         </button>
                     </div>
-                    
-
                 </div>
                 <img src={woman} alt="" id="woman" />
                 <img src={man} id="man" alt="" />
