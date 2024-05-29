@@ -17,8 +17,10 @@ const Home = () => {
                         <span id="secondLine">votre gain lors de votre affiliation</span>
                     </div>
                     <div id='bContent'>
+                        <Link id="link" to="/login">
+                            <button id="bSimulation">Démarrer une simulation</button>
+                        </Link>
                         
-                        <button id="bSimulation">Démarrer une simulation</button>
                         <button id="bDecouvrez">Découvrez en plus
                             <img src={downArrow} alt="" />
                         </button>

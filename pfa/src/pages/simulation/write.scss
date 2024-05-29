@@ -56,6 +56,7 @@
             /* 102.5% */
             width: 95%;
             display: flex;
+            transition: 300ms;
 
             .leftDiv {
                 display: flex;
@@ -180,6 +181,7 @@
             /* 102.5% */
             width: 95%;
             display: flex;
+            transition: 300ms;
 
             .leftDiv {
                 display: flex;
@@ -244,32 +246,37 @@
                 width: 50%;
 
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
 
                 #positionImg {
-                    background: red;
+                    
 
                     }
 
                     #positionImg2 {
+                        background-image: url("../../../public/adresseImg.png")
 
                     }
 
                     #positionImg3 {
+                        background-image: url("../../../public/cash.png")
 
                     }
 
                     #positionImg4 {
+                        background-image: url("../../../public/teamwork.png")
 
                     }
 
                     #positionImg5 {
-                        background: url("../../../public/assets/campaign.svg");
+                        background: url("../../../public/tools.png");
 
                     }
 
                     #positionImg6 {
+                        background: url("../../../public/offers.png");
+
                         
                     }
 
@@ -277,7 +284,7 @@
                     width: 40px;
                     height: 40px;
                     
-                    border: 1px solid #BEAF87;
+                    
 
                     
 
@@ -291,6 +298,7 @@
         }
 
         #popupContainer {
+            transition: 300ms;
             background: white;
             position: fixed;
             height: 70vh;

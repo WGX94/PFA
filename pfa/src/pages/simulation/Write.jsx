@@ -104,6 +104,8 @@ const Write = () => {
         setStep1("#BEAF87")
     };
 
+    
+
 
 
     const saveData = async () => {
@@ -137,7 +139,7 @@ const Write = () => {
 
 
             });
-            alert("data saved")
+            
         } catch (error) {
             alert("error: ", error.message);
         }
@@ -187,6 +189,7 @@ const Write = () => {
                     <div className="rightDiv">
                         <div className="img" id="positionImg">
                             <img src={man} alt="" className="photo" id='imgL' />
+                            
                         </div>
                     </div>
                 </div>
@@ -201,7 +204,7 @@ const Write = () => {
                             </div>
                             <div className="rightDiv">
                                 <div className="img" id="positionImg2">
-                                    <img src={employeesImg} alt="" className="photo" id='imgE'/>
+                                    <img src={employeesImg} alt="" className="photo" id='imgE' />
                                 </div>
                             </div>
                         </div> : null
@@ -278,13 +281,13 @@ const Write = () => {
                         <div id="popupContainer">
                             <div id="leftPopup">
                                 <div id='topLeftPopup'>
-                                    <span id='top'>Grâce à votre affiliation chez <span style={{color: '#BEAF87'}}>Century 21</span> vous pouvez bénéficier d’une augmentation de CA de<span style={{color: '#BEAF87'}}> + 150%*</span> !</span>
+                                    <span id='top'>Grâce à votre affiliation chez <span style={{ color: '#BEAF87' }}>Century 21</span> vous pouvez bénéficier d’une augmentation de CA de<span style={{ color: '#BEAF87' }}> + 150%*</span> !</span>
                                     <div id='graph'>
                                         <img src={graphIcon} alt="" />
                                     </div>
-                                    <span id='bottom'>Grâce à nos outils numériques et les publicités <span style={{color: '#BEAF87'}}>Century 21</span>, gagnez en visibilité et en productivité tout en économisant des revenus pour votre entreprise !</span>
+                                    <span id='bottom'>Grâce à nos outils numériques et les publicités <span style={{ color: '#BEAF87' }}>Century 21</span>, gagnez en visibilité et en productivité tout en économisant des revenus pour votre entreprise !</span>
                                 </div>
-                                
+
                                 <Stack direction="row" spacing={10}>
                                     <Button variant="contained" style={{ background: "#BEAF87", cursor: "pointer" }} endIcon={<ArrowIcon />}>
                                         Contacter un développeur

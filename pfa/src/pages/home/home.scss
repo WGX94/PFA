@@ -52,25 +52,40 @@
                 align-items: center;
                 width: 100%;
                 gap: 30%;
-                #bSimulation{
-                    height: 15%;
-                    width: 36%;
-                    padding: 26px 50px;
+
+                #link {
+                    display: flex;
                     justify-content: center;
-                    align-items: center;
-                    flex-shrink: 0;
-                    display: inline-flex;
-                    border-radius: 9px;
-                    background: #F7F7F7;
+                    width: 100%;
+                    height: 60px;
+                    text-decoration: none;
                     
-                    color: #252526;
-                    text-align: center;
-                    font-family: Barlow;
-                    font-size: 32px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 21px;
+
+
+
+                    #bSimulation{
+                        cursor: pointer;
+                        height: 15%;
+                        width: 36%;
+                        padding: 26px 50px;
+                        justify-content: center;
+                        align-items: center;
+                        flex-shrink: 0;
+                        display: inline-flex;
+                        border-radius: 9px;
+                        background: #F7F7F7;
+                        
+                        color: #252526;
+                        text-align: center;
+                        font-family: Barlow;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 21px;
+                    }
+
                 }
+                
                 #bDecouvrez{
                     display: flex;
                     justify-content: center;
