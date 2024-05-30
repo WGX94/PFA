@@ -37,7 +37,7 @@ const Home = () => {
             <div id='middleBlockNoir'>
                 <img src={numberCammenber} id='numberC'></img>
                 <div id="text">
-                    <span id="firstLine">L’augmentation de CA en moyenne</span>
+                    <span id="firstLine">D’augmentation de CA en moyenne</span>
                     <span id="secondLine">De visibilité  </span>
                     <span id="thirdLine">De temps gagné avec nos solutions numériques adaptées</span>
                     <span id="forthLine">Agences sont déjà franchisées</span>

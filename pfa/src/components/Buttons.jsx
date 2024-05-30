@@ -9,7 +9,7 @@ import UploadIcon from '@mui/icons-material/PictureAsPdf'
 
 export default function IconLabelButtons() {
   return (
-    <Stack direction="row" spacing={10}>
+    <Stack direction="row" spacing={2}>
       <Button variant="contained" style={{background: "#3E3E52"}} endIcon={<PrintIcon />}>
         Imprimer
       </Button>

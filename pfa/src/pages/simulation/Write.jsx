@@ -288,7 +288,7 @@ const Write = () => {
                                     <span id='bottom'>Grâce à nos outils numériques et les publicités <span style={{ color: '#BEAF87' }}>Century 21</span>, gagnez en visibilité et en productivité tout en économisant des revenus pour votre entreprise !</span>
                                 </div>
 
-                                <Stack direction="row" spacing={10}>
+                                <Stack direction="row" spacing={2}>
                                     <Button variant="contained" style={{ background: "#BEAF87", cursor: "pointer" }} endIcon={<ArrowIcon />}>
                                         Contacter un développeur
                                     </Button>

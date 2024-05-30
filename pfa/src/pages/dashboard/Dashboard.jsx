@@ -126,7 +126,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                     <div id="right">
-                        <div id="titleRight">Listes des clients</div>
+                        <div id="titleRight">Liste des clients</div>
                         <div id="list">
                             {clientsArray.map(client => (
                             <ul key={client.clientId} id="ul">

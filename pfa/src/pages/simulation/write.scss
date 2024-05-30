@@ -124,6 +124,18 @@
 
                 }
 
+                #positionImg3 {
+                    display: flex;
+                    justify-content: flex-end;
+
+                }
+
+                #positionImg6 {
+                    display: flex;
+                    justify-content: flex-end;
+
+                }
+
                 .img {
                     width: 400px;
                     height: 400px;
@@ -250,32 +262,37 @@
                 align-items: center;
 
                 #positionImg {
+                    background-image: url("../../../public/mapIcon.png");
+                    background-repeat: no-repeat;
                     
 
                     }
 
                     #positionImg2 {
-                        background-image: url("../../../public/adresseImg.png")
-
+                        background-image: url("../../../public/adresseImg.png");
+                        background-repeat: no-repeat;
                     }
 
                     #positionImg3 {
-                        background-image: url("../../../public/cash.png")
-
+                        background-image: url("../../../public/cash.png");
+                        background-repeat: no-repeat;
                     }
 
                     #positionImg4 {
-                        background-image: url("../../../public/teamwork.png")
+                        background-image: url("../../../public/teamwork.png");
+                        background-repeat: no-repeat;
 
                     }
 
                     #positionImg5 {
                         background: url("../../../public/tools.png");
+                        background-repeat: no-repeat;
 
                     }
 
                     #positionImg6 {
                         background: url("../../../public/offers.png");
+                        background-repeat: no-repeat;
 
                         
                     }
@@ -312,7 +329,7 @@
             #leftPopup {
                 width: 50%;
                 padding: 0% 2%;
-                
+            
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -327,7 +344,7 @@
                     #top {
                         color: #FFF;
                         font-family: Barlow;
-                        font-size: 28px;
+                        font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: 41px;
@@ -343,7 +360,7 @@
                     #bottom {
                         color: #FFF;
                         font-family: Barlow;
-                        font-size: 18px;
+                        font-size: 16px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: 35px;
@@ -371,12 +388,14 @@
                 background: #FFF;
                 padding: 10px 2%;
                 overflow: scroll;
+                
 
                 #top {
                     height: 500px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    align-items: center;
                     padding-bottom: 20px;
                     border-bottom: 1px solid black;
 
@@ -393,7 +412,7 @@
                             width: 82%;
                             color: #000;
                             font-family: Barlow;
-                            font-size: 18px;
+                            font-size: 16px;
                             font-style: normal;
                             font-weight: 600;
                             line-height: 30px;
